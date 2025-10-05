@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Requests</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <h1>🩸 Blood Donation Tracker</h1>
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><a href="requests.html" class="active">Requests</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Blood Requests</h2>
+
+    <form class="form-card">
+        <input type="text" placeholder="Requester Name" required>
+        <input type="text" placeholder="Required Blood Group" required>
+        <input type="text" placeholder="Hospital" required>
+        <button type="submit">Add Request</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Requester</th>
+            <th>Blood Group</th>
+            <th>Hospital</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td><td>Arun</td><td>A+</td><td>City Hospital</td><td>Pending</td>
+        </tr>
+        <tr>
+            <td>2</td><td>Priya</td><td>O-</td><td>MedCity</td><td>Fulfilled</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

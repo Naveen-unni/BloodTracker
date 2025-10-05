@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <h1>🩸 Blood Donation Tracker</h1>
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="donors.html" class="active">Donors</a></li>
+        <li><a href="requests.html">Requests</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Donor Management</h2>
+
+    <form class="form-card">
+        <input type="text" placeholder="Donor Name" required>
+        <input type="text" placeholder="Blood Group" required>
+        <input type="text" placeholder="City" required>
+        <button type="submit">Add Donor</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>City</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td><td>John Doe</td><td>O+</td><td>Kochi</td>
+            <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Neha Sharma</td><td>B+</td><td>Chennai</td>
+            <td><button class="edit">Edit</button> <button class="delete">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
